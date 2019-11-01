@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="API Testing">
+	<test name="Regression Test">
+		<classes>
+			<class name="org.restapi.test.PostAPITest" />
+			<class name="org.restapi.test.PutAPITest" />
+			<class name="org.restapi.test.GetAPITest" />
+			<class name="org.restapi.test.DeleteAPITest" />
+		</classes>
+	</test>
+</suite>
