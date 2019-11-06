@@ -162,11 +162,46 @@
                   <a name="getCallTestWithHeader">
                   </a> <!-- getCallTestWithHeader -->
                   <span class="method-name">getCallTestWithHeader</span>
-                  <div class="stack-trace">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at 1 [character 2 line 1]
-	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
-	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:195)
-	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:319)
-	at org.restapi.test.GetAPITest.getCallTestWithHeader(GetAPITest.java:93)
+                  <div class="stack-trace">javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+	at sun.security.ssl.Handshaker.process_record(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.restapi.client.RestClient.get(RestClient.java:50)
+	at org.restapi.test.GetAPITest.getCallTestWithHeader(GetAPITest.java:81)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at sun.security.validator.Validator.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 47 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 53 more
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -176,17 +211,67 @@
                   <a name="getCallTestWithoutHeader">
                   </a> <!-- getCallTestWithoutHeader -->
                   <span class="method-name">getCallTestWithoutHeader</span>
-                  <div class="stack-trace">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at 1 [character 2 line 1]
-	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
-	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:195)
-	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:319)
-	at org.restapi.test.GetAPITest.getCallTestWithoutHeader(GetAPITest.java:58)
+                  <div class="stack-trace">javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+	at sun.security.ssl.Handshaker.process_record(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.restapi.client.RestClient.get(RestClient.java:31)
+	at org.restapi.test.GetAPITest.getCallTestWithoutHeader(GetAPITest.java:47)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at sun.security.validator.Validator.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 47 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 53 more
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-API_Testing-class-failed -->
+          <div class="suite-API_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.restapi.test.PostAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postCallMethod">
+                  </a> <!-- postCallMethod -->
+                  <span class="method-name">postCallMethod</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Testing-class-passed -->
           <div class="suite-API_Testing-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -220,21 +305,6 @@
                   <a name="deleteCallWithHeader">
                   </a> <!-- deleteCallWithHeader -->
                   <span class="method-name">deleteCallWithHeader</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Testing-class-passed -->
-          <div class="suite-API_Testing-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.restapi.test.PostAPITest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="postCallMethod">
-                  </a> <!-- postCallMethod -->
-                  <span class="method-name">postCallMethod</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -298,32 +368,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'postCallMethod')
 data.setCell(0, 2, 'org.restapi.test.PostAPITest')
-data.setCell(0, 3, 2279);
+data.setCell(0, 3, 2329);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getCallTestWithHeader')
-data.setCell(1, 2, 'org.restapi.test.GetAPITest')
-data.setCell(1, 3, 1357);
+data.setCell(1, 1, 'putCallTest')
+data.setCell(1, 2, 'org.restapi.test.PutAPITest')
+data.setCell(1, 3, 858);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getCallTestWithoutHeader')
-data.setCell(2, 2, 'org.restapi.test.GetAPITest')
-data.setCell(2, 3, 1078);
+data.setCell(2, 1, 'deleteCallWithHeader')
+data.setCell(2, 2, 'org.restapi.test.DeleteAPITest')
+data.setCell(2, 3, 758);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'deleteCall')
 data.setCell(3, 2, 'org.restapi.test.DeleteAPITest')
-data.setCell(3, 3, 881);
+data.setCell(3, 3, 724);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'putCallTest')
-data.setCell(4, 2, 'org.restapi.test.PutAPITest')
-data.setCell(4, 3, 800);
+data.setCell(4, 1, 'getCallTestWithHeader')
+data.setCell(4, 2, 'org.restapi.test.GetAPITest')
+data.setCell(4, 3, 272);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'deleteCallWithHeader')
-data.setCell(5, 2, 'org.restapi.test.DeleteAPITest')
-data.setCell(5, 3, 764);
+data.setCell(5, 1, 'getCallTestWithoutHeader')
+data.setCell(5, 2, 'org.restapi.test.GetAPITest')
+data.setCell(5, 3, 67);
 window.suiteTableData['API_Testing']= { tableData: data, tableDiv: 'times-div-API_Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-API_Testing">
               </div> <!-- times-div-API_Testing -->
             </div> <!-- times-div -->
@@ -363,53 +433,53 @@ return data;
               <div class="chronological-class-name">org.restapi.test.PutAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">2299 ms</span>
+                <span class="method-start">2355 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">putCallTest</span>
-                <span class="method-start">2299 ms</span>
+                <span class="method-start">2355 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.restapi.test.GetAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3108 ms</span>
+                <span class="method-start">3218 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getCallTestWithHeader</span>
-                <span class="method-start">3108 ms</span>
+                <span class="method-start">3219 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4472 ms</span>
+                <span class="method-start">3499 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getCallTestWithoutHeader</span>
-                <span class="method-start">4473 ms</span>
+                <span class="method-start">3501 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.restapi.test.DeleteAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">5555 ms</span>
+                <span class="method-start">3576 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deleteCall</span>
-                <span class="method-start">5556 ms</span>
+                <span class="method-start">3577 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">6442 ms</span>
+                <span class="method-start">4304 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deleteCallWithHeader</span>
-                <span class="method-start">6442 ms</span>
+                <span class="method-start">4304 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
