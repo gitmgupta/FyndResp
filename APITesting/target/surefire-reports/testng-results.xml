@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="API Testing" duration-ms="7009" started-at="2019-11-06T08:28:41Z" finished-at="2019-11-06T08:28:48Z">
+  <suite name="API Testing" duration-ms="7558" started-at="2019-11-06T09:39:36Z" finished-at="2019-11-06T09:39:43Z">
     <groups>
     </groups>
-    <test name="Regression Test" duration-ms="7009" started-at="2019-11-06T08:28:41Z" finished-at="2019-11-06T08:28:48Z">
+    <test name="Regression Test" duration-ms="7558" started-at="2019-11-06T09:39:36Z" finished-at="2019-11-06T09:39:43Z">
       <class name="org.restapi.test.PutAPITest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.PutAPITest@1b40d5f0]" name="setup" is-config="true" duration-ms="1" started-at="2019-11-06T13:58:44Z" finished-at="2019-11-06T13:58:44Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.PutAPITest@1b40d5f0]" name="setup" is-config="true" duration-ms="1" started-at="2019-11-06T15:09:38Z" finished-at="2019-11-06T15:09:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="putCallTest()[pri:0, instance:org.restapi.test.PutAPITest@1b40d5f0]" name="putCallTest" duration-ms="813" started-at="2019-11-06T13:58:44Z" finished-at="2019-11-06T13:58:45Z">
+        <test-method status="PASS" signature="putCallTest()[pri:0, instance:org.restapi.test.PutAPITest@1b40d5f0]" name="putCallTest" duration-ms="842" started-at="2019-11-06T15:09:38Z" finished-at="2019-11-06T15:09:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putCallTest -->
       </class> <!-- org.restapi.test.PutAPITest -->
       <class name="org.restapi.test.GetAPITest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.GetAPITest@ea4a92b]" name="setup" is-config="true" duration-ms="1" started-at="2019-11-06T13:58:45Z" finished-at="2019-11-06T13:58:45Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.GetAPITest@ea4a92b]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-06T15:09:39Z" finished-at="2019-11-06T15:09:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="getCallTestWithHeader()[pri:0, instance:org.restapi.test.GetAPITest@ea4a92b]" name="getCallTestWithHeader" duration-ms="1130" started-at="2019-11-06T13:58:45Z" finished-at="2019-11-06T13:58:46Z">
+        <test-method status="FAIL" signature="getCallTestWithHeader()[pri:0, instance:org.restapi.test.GetAPITest@ea4a92b]" name="getCallTestWithHeader" duration-ms="1403" started-at="2019-11-06T15:09:39Z" finished-at="2019-11-06T15:09:40Z">
           <exception class="org.json.JSONException">
             <message>
               <![CDATA[A JSONObject text must begin with '{' at 1 [character 2 line 1]]]>
@@ -66,11 +66,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCallTestWithHeader -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.GetAPITest@ea4a92b]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-06T13:58:46Z" finished-at="2019-11-06T13:58:46Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.GetAPITest@ea4a92b]" name="setup" is-config="true" duration-ms="3" started-at="2019-11-06T15:09:40Z" finished-at="2019-11-06T15:09:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="getCallTestWithoutHeader()[pri:0, instance:org.restapi.test.GetAPITest@ea4a92b]" name="getCallTestWithoutHeader" duration-ms="1044" started-at="2019-11-06T13:58:46Z" finished-at="2019-11-06T13:58:47Z">
+        <test-method status="FAIL" signature="getCallTestWithoutHeader()[pri:0, instance:org.restapi.test.GetAPITest@ea4a92b]" name="getCallTestWithoutHeader" duration-ms="1325" started-at="2019-11-06T15:09:40Z" finished-at="2019-11-06T15:09:42Z">
           <exception class="org.json.JSONException">
             <message>
               <![CDATA[A JSONObject text must begin with '{' at 1 [character 2 line 1]]]>
@@ -117,29 +117,29 @@
         </test-method> <!-- getCallTestWithoutHeader -->
       </class> <!-- org.restapi.test.GetAPITest -->
       <class name="org.restapi.test.PostAPITest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.PostAPITest@4ec6a292]" name="setup" is-config="true" duration-ms="14" started-at="2019-11-06T13:58:41Z" finished-at="2019-11-06T13:58:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.PostAPITest@4ec6a292]" name="setup" is-config="true" duration-ms="9" started-at="2019-11-06T15:09:36Z" finished-at="2019-11-06T15:09:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="postCallMethod()[pri:0, instance:org.restapi.test.PostAPITest@4ec6a292]" name="postCallMethod" duration-ms="2340" started-at="2019-11-06T13:58:41Z" finished-at="2019-11-06T13:58:44Z">
+        <test-method status="PASS" signature="postCallMethod()[pri:0, instance:org.restapi.test.PostAPITest@4ec6a292]" name="postCallMethod" duration-ms="2244" started-at="2019-11-06T15:09:36Z" finished-at="2019-11-06T15:09:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCallMethod -->
       </class> <!-- org.restapi.test.PostAPITest -->
       <class name="org.restapi.test.DeleteAPITest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.DeleteAPITest@3c5a99da]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-06T13:58:47Z" finished-at="2019-11-06T13:58:47Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.DeleteAPITest@3c5a99da]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-06T15:09:42Z" finished-at="2019-11-06T15:09:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="deleteCall()[pri:0, instance:org.restapi.test.DeleteAPITest@3c5a99da]" name="deleteCall" duration-ms="778" started-at="2019-11-06T13:58:47Z" finished-at="2019-11-06T13:58:48Z">
+        <test-method status="PASS" signature="deleteCall()[pri:0, instance:org.restapi.test.DeleteAPITest@3c5a99da]" name="deleteCall" duration-ms="825" started-at="2019-11-06T15:09:42Z" finished-at="2019-11-06T15:09:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCall -->
-        <test-method status="PASS" signature="deleteCallWithHeader()[pri:0, instance:org.restapi.test.DeleteAPITest@3c5a99da]" name="deleteCallWithHeader" duration-ms="825" started-at="2019-11-06T13:58:48Z" finished-at="2019-11-06T13:58:48Z">
+        <test-method status="PASS" signature="deleteCallWithHeader()[pri:0, instance:org.restapi.test.DeleteAPITest@3c5a99da]" name="deleteCallWithHeader" duration-ms="840" started-at="2019-11-06T15:09:42Z" finished-at="2019-11-06T15:09:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCallWithHeader -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.DeleteAPITest@3c5a99da]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-06T13:58:48Z" finished-at="2019-11-06T13:58:48Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.restapi.test.DeleteAPITest@3c5a99da]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-06T15:09:42Z" finished-at="2019-11-06T15:09:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->

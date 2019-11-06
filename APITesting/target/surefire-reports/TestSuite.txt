@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.044 sec <<< FAILURE! - in TestSuite
-getCallTestWithHeader(org.restapi.test.GetAPITest)  Time elapsed: 1.201 sec  <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.493 sec <<< FAILURE! - in TestSuite
+getCallTestWithHeader(org.restapi.test.GetAPITest)  Time elapsed: 1.427 sec  <<< FAILURE!
 org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
 	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
 	at org.json.JSONObject.<init>(JSONObject.java:195)
 	at org.json.JSONObject.<init>(JSONObject.java:319)
 	at org.restapi.test.GetAPITest.getCallTestWithHeader(GetAPITest.java:93)
 
-getCallTestWithoutHeader(org.restapi.test.GetAPITest)  Time elapsed: 0.99 sec  <<< FAILURE!
+getCallTestWithoutHeader(org.restapi.test.GetAPITest)  Time elapsed: 1.326 sec  <<< FAILURE!
 org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
 	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
 	at org.json.JSONObject.<init>(JSONObject.java:195)
