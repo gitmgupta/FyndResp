@@ -1,0 +1,4 @@
+org\restapi\test\GetAPITest.class
+org\restapi\test\PutAPITest.class
+org\restapi\test\DeleteAPITest.class
+org\restapi\test\PostAPITest.class
