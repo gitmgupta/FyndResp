@@ -26,7 +26,7 @@ OR
 # Setup required to run via maven
 Ensure that Installed JRE is pointing to JDK
     
-	-> Window -> Preferences -> Java -> Installed JREs -> Pointing to JDK rather than JRE.
+	-> Window -> Preferences -> Java -> Installed JREs -> Pointing to JDK rather than JRE
 
 # Setup required to run via testng
 Ensure that TestNG is added under Libraries
